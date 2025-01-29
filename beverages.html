@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ATAS Cafe Beverages</title>
+  <link rel="stylesheet" type="text/css" href="css/foodstyle.css">
+  <style >
+
+body
+{
+  font-family: Georgia, Times New Roman, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+h1 
+{
+    font-size: 3.5rem;
+    color: #6b4f4f;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.new-menu-container 
+{
+    width: 100%;
+    margin: 20px auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+    
+.menu-section 
+{
+    background-color: #EFE8D8;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    flex: 1 1 calc(33.33% - 20px); 
+    min-width: 250px;
+}
+
+.menu-section h2 
+{
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #4a3321;
+    border-bottom: 2px solid #C2C3A8;
+    display: inline-block;
+}
+
+.new-menu-item 
+{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5px;
+}
+
+.new-menu-item p 
+{
+    margin: 0;
+}
+
+.new-menu-item p.price 
+{
+    font-weight: bold;
+}
+
+.drink-menu-container 
+{
+    width: 90%;
+    margin: 20px auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.menu-table 
+{
+    width: 100%;
+    border-spacing: 0 10px;
+}
+
+.menu-table th, .menu-table td 
+{
+    text-align: center;
+    padding: 8px;
+}
+
+.menu-table th 
+{
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #4a3321;
+    border-bottom: 2px solid #C2C3A8;
+}
+
+.menu-table td:first-child
+{
+    text-align: left;
+    font-weight: bold;
+}
+
+.menu-table .price 
+{
+    text-align: right;
+}
+
+.navbar 
+{
+    display: flex;
+    justify-content: center;
+    background-color: #d5cdbc;
+    padding: 10px 20px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar a
+{
+    text-decoration: none;
+    color: #6b4f4f;
+    padding: 10px 15px;
+    margin: 0 5px;
+    border-radius: 5px;
+    font-size: 1.3rem;
+    transition: background-color 0.3s;
+}
+
+.navbar a:hover 
+{
+    background-color: #809671;
+}
+
+.section 
+{
+    padding: 20px;
+}
+
+#food, #beverages 
+{
+    margin-top: 50px;
+}
+
+
+</style>
+
+</head>
+<body>
+
+<header>
+    <img src="image/atascafe.png" alt="ATAS Café & Pâtisserie">
+</header>
+
+<button class="toggle-btn" id="menuButton">☰</button>
+<nav class="vertical-nav" id="verticalNav">
+    <a href="index.html">Home</a>
+    <a href="about_us.html">About Us</a>
+    <a href="homepage_menu.html">Menu</a>
+    <a href="service.html">Services</a>
+    <a href="AtasCafe_contact.html">Contact</a>
+</nav>
+
+<div class="navbar">
+    <a href="Menu.html">Food</a>
+    <a href="beverages.html">Beverages</a>
+</div>
+
+<section class="section1">
+    <h1>DRINKS</h1>
+
+<div class="new-menu-container">
+<div class="menu-section">
+      <h2>Coffee</h2>
+      <table class="menu-table">
+        <thead>
+        <tr>
+            <th>Drink</th>
+            <th>Hot</th>
+            <th>Ice</th>
+          </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td>Espresso</td>
+            <td>7</td>
+            <td>-</td>
+          </tr>      
+        <tr>
+            <td>Americano</td>
+            <td>8</td>
+            <td>9</td>
+          </tr>  
+        <tr>
+            <td>Cafe Latte</td>
+            <td>9</td>
+            <td>10</td>
+          </tr>     
+        <tr>
+            <td>Cafe Mocha</td>
+            <td>10</td>
+            <td>11</td>
+          </tr>     
+          <tr>
+            <td>Cappucino</td>
+            <td>9</td>
+            <td>10</td>
+          </tr>  
+        <tr>
+            <td>Vanilla Latte</td>
+            <td>10</td>
+            <td>11</td>
+          </tr> 
+        <tr>
+            <td>Rose Latte</td>
+            <td>10</td>
+            <td>11</td>
+          </tr> 
+        <tr>
+            <td>Hazelnut Latte</td>
+            <td>10</td>
+            <td>11</td>
+          </tr> 
+        <tr>
+            <td>Butterscotch Latte</td>
+            <td>10</td>
+            <td>11</td>
+          </tr> 
+        <tr>
+            <td>Caramel Latte</td>
+            <td>10</td>
+            <td>11</td>
+          </tr> 
+        <tr>
+            <td>Caramel Macchiato</td>
+            <td>11</td>
+            <td>12</td>
+          </tr> 
+        <tr>
+            <td>Dalgona Coffee</td>
+            <td>-</td>
+            <td>11</td>
+          </tr> 
+        <tr>
+            <td>Handbrew Coffee</td>
+            <td>15</td>
+            <td>-</td>
+          </tr> 
+        <tr>
+            <td>Upgrade Single  Origin</td>
+            <td>+2</td>
+          </tr> 
+      </tbody>
+  </table>
+</div>
+     
+<div class="new-menu-container">
+    <div class="menu-section">
+      <h2>Non-Coffee</h2>
+      <table class="menu-table">
+        <thead>
+        <tr>
+            <th>Drink</th>
+            <th>Hot</th>
+            <th>Ice</th>
+          </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td>Hojicha Latte</td>
+            <td>10</td>
+            <td>11</td>
+          </tr> 
+         <tr>
+            <td>Matcha Latte</td>
+            <td>10</td>
+            <td>11</td>
+          </tr>
+         <tr>
+            <td>Chocolate</td>
+            <td>8</td>
+            <td>9</td>
+          </tr>
+          <tr>
+            <td>Milk</td>
+            <td>6</td>
+            <td>7</td>
+          </tr>
+         </tbody>
+     </table>
+ </div>
+
+<div class="new-menu-container">
+    <div class="menu-section">
+      <h2>Mocktail</h2>
+      <table class="menu-table">
+        <thead>
+        <tr>
+            <th>Drink</th>
+            <th>Ice</th>
+          </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td>Peach Passion</td>
+            <td>13</td>
+          </tr> 
+        <tr>
+            <td>Apricot Agelora Chia</td>
+            <td>13</td>
+          </tr> 
+        <tr>
+            <td>Rose Lychee</td>
+            <td>13</td>
+          </tr> 
+         </tbody>
+     </table>
+ </div>
+
+<div class="new-menu-container">
+    <div class="menu-section">
+      <h2>Frappe</h2>
+      <table class="menu-table">
+        <thead>
+          <tr>
+            <th>Drink</th>
+            <th>price</th>
+          </tr>
+        <tr>
+            <td>Mocha Oreo Frappe</td>
+            <td>14</td>
+          </tr>
+        <tr>
+            <td>Caramel Macchiato Frappe</td>
+            <td>14</td>
+          </tr>
+        <tr>
+            <td>Espresso Frappe</td>
+            <td>14</td>
+          </tr>
+        <tr>
+            <td>Dolce Frappe</td>
+            <td>14</td>
+          </tr>
+        <tr>
+            <td>Caramel Frappe</td>
+            <td>14</td>
+          </tr>
+        <tr>
+            <td>Mocha Frappe</td>
+            <td>14</td>
+          </tr>
+        <tr>
+            <td>Strawberry Frappe</td>
+            <td>13</td>
+          </tr>
+        <tr>
+            <td>Strawberry Oreo Frappe</td>
+            <td>14</td>
+          </tr>
+        <tr>
+            <td>Matcha OreoFrappe</td>
+            <td>14</td>
+          </tr>
+        <tr>
+            <td>Oreo Frappe</td>
+            <td>13</td>
+          </tr>
+    <tr>
+            <td>Double Chocolate Frappe</td>
+            <td>13</td>
+          </tr>
+        <tr>
+            <td>Double Chocolate Frappe</td>
+            <td>13</td>
+          </tr>
+        <tr>
+            <td>Matcha Frappe</td>
+            <td>13</td>
+          </tr>
+        <tr>
+            <td>ButterbeerFrappe</td>
+            <td>14</td>
+          </tr>
+        <tr>
+            <td>Vanilla Cream Frappe</td>
+            <td>13</td>
+          </tr>
+        <tr>
+            <td>Caramel Cream Frappe</td>
+            <td>13</td>
+          </tr>
+        <tr>
+            <td>ButterbeerFrappe</td>
+            <td>14</td>
+          </tr>
+        <tr>
+            <td>ButterbeerFrappe</td>
+            <td>14</td>
+          </tr>
+        <tr>
+            <td>Vanilla Cream Frappe</td>
+            <td>13</td>
+          </tr>
+        <tr>
+            <td>Caramel Cream Frappe</td>
+            <td>13</td>
+          </tr>
+        <tr>
+            <td>Hojicha Frappe</td>
+            <td>14</td>
+          </tr>
+        <tr>
+            <td>Strawberry Yogurt Frappe</td>
+            <td>13</td>
+          </tr>
+        <tr>
+            <td>Passion Fruit Yogurt Frappe</td>
+            <td>13</td>
+          </tr>
+        <tr>
+            <td>Mango Yogurt Frappe</td>
+            <td>13</td>
+          </tr>
+         </thead>
+     </table>
+ </div>
+
+ 
+
+ 
+
+
+<script>
+    const nav = document.getElementById('verticalNav');
+    const content = document.getElementById('mainContent');
+    const menuButton = document.getElementById('menuButton');
+
+    menuButton.addEventListener('click', () => {
+        if (nav.style.right === "0px") { 
+            nav.style.right = "-250px"; 
+            content.classList.remove('shift'); 
+            menuButton.textContent = "☰ "; 
+        } else {
+            nav.style.right = "0px"; 
+            content.classList.add('shift');
+            menuButton.textContent = "✖️ Close"; 
+        }
+    });
+</script>
+
+
+
+</body>
+</html>

@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ATAS Cafe Menu</title>
+  <link rel="stylesheet" type="text/css" href="css/foodstyle.css">
+</head>
+<body>
+
+<header>
+    <img src="image/atascafe.png" alt="ATAS Café & Pâtisserie">
+</header>
+
+<button class="toggle-btn" id="menuButton">☰</button>
+<nav class="vertical-nav" id="verticalNav">
+    <a href="index.html">Home</a>
+    <a href="about_us.html">About Us</a>
+    <a href="homepage_menu.html">Menu</a>
+    <a href="service.html">Services</a>
+    <a href="AtasCafe_contact.html">Contact</a>
+</nav>
+
+    <div class="navbar">
+        <a href="Menu.html">Food</a>
+        <a href="beverages.html">Beverages</a>
+    </div>
+
+<section class="section1">
+<section class="new-menu-section">
+    <h2 class="hover-effect">Discover Our New Menu</h2>
+    <p>Freshly curated dishes and delightful treats, designed to elevate your dining experience. Check out our latest additions!</p>
+    <div class="menu-container">
+      <div class="menu-item">
+        <img src="image/food6.png" alt="Grilled Chicken Salad">
+        <h3>Grilled Chicken Salad</h3>
+        <p>Fresh greens topped with grilled chicken, soft-boiled eggs, and a tangy dressing.</p>
+      </div>
+      <div class="menu-item">
+        <img src="image/food5.png" alt="Neapolitan Pizza">
+        <h3>Neapolitan Pizza</h3>
+        <p>Authentic Italian-style pizza with a crispy crust and rich tomato sauce.</p>
+      </div>
+      <div class="menu-item">
+        <img src="image/food4.png" alt="Chicken Mushroom Steak">
+        <h3>Chicken Mushroom Steak</h3>
+        <p>Juicy chicken steak served with creamy mushroom sauce and mashed potatoes.</p>
+      </div>
+      <div class="menu-item">
+        <img src="image/food3.png" alt="Classic Breakfast">
+        <h3>Classic Breakfast</h3>
+        <p>A hearty breakfast featuring bagels, eggs, avocado, and more.</p>
+      </div>
+      <div class="menu-item">
+        <img src="image/food2.png" alt="Crispy Chicken Burger">
+        <h3>Crispy Chicken Burger</h3>
+        <p>Golden-fried chicken in a fluffy bun with seasoned potato wedges.</p>
+      </div>
+      <div class="menu-item">
+        <img src="image/food16.png" alt="Deluxe Chicken Burger">
+        <h3>Deluxe Chicken Burger</h3>
+        <p>Juicy chicken fillet with fresh toppings, melted cheese, flavorful sauce, served with seasoned wedges.</p>
+      </div>
+    </div>
+
+    <h2 class="hover-effect">Discover our freshly made bakeries</h2>
+    <p>Freshly baked pastries and delightful treats, crafted to elevate your bakery experience. Explore our latest creations!</p>
+    <div class="menu-container">
+      <div class="menu-item">
+        <img src="image/food1.png" alt="Chocolate Roll">
+        <h3>Chocolate Roll</h3>
+        <p>Flaky pastry rolls drizzled with rich chocolate glaze.</p>
+      </div>
+
+      <div class="menu-item">
+        <img src="image/food10.jpg" alt="Cake">
+        <h3>Hazelnut Lemon Cake</h3>
+        <p>A moist slice of lemon cake with subtle hints of hazelnut, served with a light garnish on top.</p>
+      </div>
+
+      <div class="menu-item">
+        <img src="image/food12.png" alt="Cake">
+        <h3>Tiramisu Burnt Cheesecake</h3>
+        <p>A fusion dessert with the creamy texture of tiramisu and the caramelized surface of a burnt cheesecake.</p>
+      </div>
+
+      <div class="menu-item">
+        <img src="image/food17.png" alt="bread">
+        <h3>Brioche toast</h3>
+        <p>Perfectly golden and buttery brioche loaves, perfect to pair with hot latte.</p>
+      </div>
+
+      <div class="menu-item">
+        <img src="image/food18.png" alt="bread">
+        <h3>Cream Cheese Garlic Bread</h3>
+        <p>Round bread rolls filled with cream cheese, topped with a savory garlic glaze and herbs.</p>
+      </div>
+
+      <div class="menu-item">
+        <img src="image/food19.png" alt="Painau Chocolate">
+        <h3>Painau Chocolat</h3>
+        <p>Classic French pastry with a golden, flaky crust encasing rich chocolate.</p>
+      </div>
+
+      <div class="menu-item">
+        <img src="image/food20.png" alt="Strawberry Tart">
+        <h3>Classic Strawberry Tart</h3>
+        <p>A beautifully arranged tart topped with fresh strawberries and a pistachio garnish, all on a buttery crust.</p>
+      </div>
+
+      <div class="menu-item">
+        <img src="image/food21.png" alt="Rose Lychee Roll Cake">
+        <h3>Rose Lychee Roll Cake</h3>
+        <p>A soft sponge roll filled with cream and lychee flavors.</p>
+      </div>
+
+      <div class="menu-item">
+        <img src="image/food22.png" alt="Crème Brûlée Danish">
+        <h3>Crème Brûlée Danish</h3>
+        <p>A flaky Danish pastry with a creamy crème brûlée filling, topped with caramelized sugar and fresh berries.</p>
+      </div>
+  </section>
+    
+</section>
+
+<script>
+    const nav = document.getElementById('verticalNav');
+    const content = document.getElementById('mainContent');
+    const menuButton = document.getElementById('menuButton');
+
+    menuButton.addEventListener('click', () => {
+        if (nav.style.right === "0px") { 
+            nav.style.right = "-250px"; 
+            content.classList.remove('shift'); 
+            menuButton.textContent = "☰ "; 
+        } else {
+            nav.style.right = "0px"; 
+            content.classList.add('shift');
+            menuButton.textContent = "✖ Close"; 
+        }
+    });
+</script>
+
+
+    <footer>
+      <p>&copy; 2025 ATAS Café & Pâtisserie . All rights reserved.</p>
+    </footer>
+
+</body>
+</html>

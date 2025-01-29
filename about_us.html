@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>ABOUT US</title>
+
+	<link rel="stylesheet" type="text/css" href="css/foodstyle.css">
+
+<style>
+
+.image-container img
+{
+    width: 35%;
+    height: auto;
+    margin: 10px;
+    border-radius: 10px;
+    box-shadow: 0 10px 15px rgba(0,0,0,0.2);
+    transition: transform 0.3s, box-shadow 0.3s;
+    object-fit: cover;
+}
+
+.image-container img:hover
+{
+    transform: translateY(-10px);
+    box-shadow: 0 15px 20px rgba(0, 0, 0, 0.3);
+}
+
+.responsive-image
+{
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+    width: 35%;
+}
+
+.color-palette 
+{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin: 20px 0;
+}
+.color-box 
+{
+    width: 100px;
+    height: 180px;
+    border: 3px solid #ccc; 
+    border-radius: 20px; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    background-color: white;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+.color-box img 
+{
+    width: 80px; 
+    height: 120px;
+    border-radius: 15px;
+    object-fit: cover;
+}
+
+.color-box:hover 
+{
+    transform: scale(1.1);
+    border-color: #555; 
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease-in-out;
+}
+
+.container3
+{
+    max-width: 1200px;
+    margin: 0 auto;  
+    padding: 30px;   
+    background-color: #C2C3A8; 
+    border: 1px solid #ddd;    
+    border-radius: 8px;       
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+}
+
+
+</style>
+
+</head>
+<body>
+	 <header>
+        <img src="image/atascafe.png" alt="ATAS Café & Pâtisserie">
+    </header>
+
+     <button class="toggle-btn" id="menuButton">☰</button>
+    <nav class="vertical-nav" id="verticalNav">
+        <a href="index.html">Home</a>
+        <a href="about_us.html">About Us</a>
+        <a href="homepage_menu.html">Menu</a>
+        <a href="service.html">Services</a>
+        <a href="AtasCafe_contact.html">Contact</a>
+    </nav>
+
+
+ <section class="section1">
+      <h1 style="text-align: center;">ABOUT US</h1>
+        <div class="container1">
+
+            <h2>Our Story</h2>
+
+            <div style="width: 100%; text-align: justify; font-size: 18px;">
+            <p>Located in Tanah Merah, Kelantan, Atas Cafe is a popular spot with a varied cuisine and cozy atmosphere. We created an elegant Asian-fusion café design with hotel-style interior design. Popular with residents and tourists of all ages, our café was founded in 2020 and offers a wide selection of main courses, beverages, and desserts. In Kelantan, we now have three café branchs; two more are in Kota Bharu. Additionally, our café offers customers spacious areas, delicious meals, and Instagram-worthy spots for OOTD photos.</p>
+            </div>
+
+            <div class="image-container">
+            <img src="image/staffatas.jpg" alt=" Staff Atas Cafe" class="responsive-image">
+
+        
+    </div>
+</section>
+
+<section class="section1">
+        <div class="container3">
+
+            <h2>Tagline</h2>
+            <p>A cozy cafe in Tanah Merah that served high quality & premium coffee and food at affordable price.</p>
+
+    </div>
+</section>
+
+
+<section class="section1">
+        <div class="container1">
+
+            <h2>Cafe Color Themes</h2>
+
+            <div class="color-palette">
+            <div class="color-box">
+                <img src="image/darkchocolate.jpg" alt="Dark Chocolate">
+                <p>Dark Chocolate</p>
+            </div>
+            <div class="color-box">
+                <img src="image/cream.jpg" alt="Cream">
+                <p>Cream</p>
+            </div>
+            <div class="color-box">
+                <img src="image/grey.jpg" alt="Grey">
+                <p>Grey</p>
+            </div>
+            <div class="color-box">
+                <img src="image/deepolive.jpg" alt="Deep Olive">
+                <p>Deep Olive</p>
+            </div>
+        </div>
+
+        <p>Atas Cafe Tanah Merah branch colour themes is dark chocolate, cream, grey, and deep olive.</p>
+
+   </div>
+</section>         
+
+   <script>
+    const nav = document.getElementById('verticalNav');
+    const content = document.getElementById('mainContent');
+    const menuButton = document.getElementById('menuButton');
+
+    menuButton.addEventListener('click', () => {
+        if (nav.style.right === "0px") { 
+            nav.style.right = "-250px";
+            content.classList.remove('shift'); 
+            menuButton.textContent = "☰ ";
+        } else {
+            nav.style.right = "0px";
+            content.classList.add('shift');
+            menuButton.textContent = "✖ Close";
+        }
+    });
+</script>
+
+	<footer>
+      <p>&copy; 2025 ATAS Café & Pâtisserie . All rights reserved.</p>
+  	</footer>
+
+</body>
+</html>

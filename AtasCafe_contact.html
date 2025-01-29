@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ATAS CAFFE</title>
+    <link rel="stylesheet" type="text/css" href="css/foodstyle.css">
+</head>
+<body>
+    <header>
+        <img src="image/atascafe.png" alt="ATAS Café & Pâtisserie">
+    </header>
+
+    <button class="toggle-btn" id="menuButton">☰</button>
+    <nav class="vertical-nav" id="verticalNav">
+        <a href="index.html">Home</a>
+        <a href="about_us.html">About Us</a>
+        <a href="homepage_menu.html">Menu</a>
+        <a href="service.html">Services</a>
+        <a href="AtasCafe_contact.html">Contact</a>
+    </nav>
+
+    <section class="section1">
+        <div class="container1">
+    <div class="contact-container">
+        <h1>Contact Us</h1>
+        <div class="address-section">
+            <h3>Our Address</h3>
+            <p>ATAS Café & Pâtisserie Tanah Merah</p>
+            <p>No 30-1, Kompleks Perniagaan Humaira, Jalan Taman Hiburan,</p>
+            <p>17500 Tanah Merah, Kelantan</p>
+        </div>
+        <div class="map-section">
+            <h3>Find Us on the Map</h3>
+            <div class="map-container">
+    
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3969.349033657106!2d102.14540417474703!3d5.806283994176604!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31b69dfaba2b425f%3A0xf43369215710ccfa!2sATAS%20CAFE!5e0!3m2!1sen!2smy!4v1736182581452!5m2!1sen!2smy" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> 
+            </div>
+        </div>
+        <div class="cta-buttons">
+            <a href="tel:+0129550301">Call Us</a>
+        </div>
+
+        <h3>Social Media</h3>
+        <div class="social-media-icons">
+            <a href="https://www.instagram.com/atascafe_/?hl=en" target="_blank">
+            <img src="image/iglogo.png" alt="Instagram Logo" class="icon" />
+            </a>
+            <a href="https://www.tiktok.com/@atascafe301?_t=ZS-8t0XcqMQVlP&_r=1" target="_blank">
+            <img src="image/tiktok.png" alt="TikTok Logo" class="icon" />
+             </a>
+            <a href="https://www.facebook.com/atascafetm/?locale=ms_MY" target="_blank">
+            <img src="image/facebook.png" alt="TikTok Logo" class="icon" />
+            </a>
+
+            </div>
+</section>
+
+  <footer>
+      <p>&copy; 2025 ATAS Café & Pâtisserie . All rights reserved.</p>
+    </footer>
+   
+
+
+
+<script>
+    const nav = document.getElementById('verticalNav');
+    const content = document.getElementById('mainContent');
+    const menuButton = document.getElementById('menuButton');
+
+    menuButton.addEventListener('click', () => {
+        if (nav.style.right === "0px") { 
+            nav.style.right = "-250px"; 
+            content.classList.remove('shift'); 
+            menuButton.textContent = "☰ ";
+        } else {
+            nav.style.right = "0px";
+            content.classList.add('shift');
+            menuButton.textContent = "✖ Close";
+        }
+    });
+</script>
+
+
+ 
+</body>
+</html>
